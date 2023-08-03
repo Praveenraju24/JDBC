@@ -8,11 +8,17 @@ public class jdbc {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub 
 		// TODO Auto-generated method stub
+		
+		//LOAD CONNECTION
 		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		//GET CONNECTION
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Database_name","Your_username","Your_Password");
+		
+		//CREATE STATEMENT
 		Statement st=con.createStatement();
 		
-		
+		//CRUD OPERTAIONS 
 	    System.out.println("Student Management System");
 	    System.out.println("1.create 2.Retrieve 3.Update 4.Delete 5.Insert 6.Drop Whole data 7.truncate only data 8.Exit");
 		
